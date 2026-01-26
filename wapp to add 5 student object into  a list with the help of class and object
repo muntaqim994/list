@@ -1,0 +1,22 @@
+class Student:
+    def __init__(self,name,id):
+        self.name=name
+        self.id=id
+
+    def getStudentinfo(self):
+        return self.name +" "+ self.id
+    
+l1=[]
+
+while True:
+    name = input("enter the student name :")
+    id= input("enter the student id :")
+    std=Student(name,id)
+    l1.append(std.getStudentinfo())
+    a1= int(input("enter 1 to add one more studenyt details else 2 :"))
+    if(a1 ==1):
+        continue
+    else:
+        break
+for i in  l1:
+    print(l1)
